@@ -1,0 +1,8 @@
+Important commands to be wary of:
+---------------------------------
+1. How to build docker image
+	- docker run -dp 8080:8080 --rm peggyworks/docker_demo
+	- d = detatched, p = configure port, rm removes the container once it has stopped
+2. How to stop the container
+	- docker stop $(docker ps -q) 
+	- We can insert the output of another command by doing $(command)
